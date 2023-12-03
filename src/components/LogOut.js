@@ -17,7 +17,7 @@ function Login() {
     const signIn = async (e) => {
         e.preventDefault()
         
-        await axios('http://localhost:8000/sign-in',{
+        await axios('http://localhost:8000/logout',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             withCredentials:'include',
@@ -30,28 +30,10 @@ function Login() {
             setErr(true)
             
         })
-        setRedirect(true)
-     
-    }
-    if (err) {
-        return <Navigate to='/wrong'/>
-    }
-    if (login) {
-        return <Navigate to='/object'/>
     }
 
     
-    function signUP(){
-
-     axios.post('http://localhost:8000/create-user',{
-                name: inpname,
-                password: inppassword
-            }).then((r => {
-                setName('')
-                setPassword('')
-            }))
-        
-    }
+    
     
     return (
         

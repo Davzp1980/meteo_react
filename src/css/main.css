@@ -39,6 +39,11 @@ body {
 .Sign-Up {
     margin-right: 40px;
 }
+
+.home {
+    
+    margin-right: 40px;
+}
 main {
     margin: 50px 50px;
     width: 15%;
@@ -54,7 +59,7 @@ aside {
 
 .login {
     width: 15%;
-    margin-top: -170px;
+    margin-top: 0;
     margin-right: 0%;
     float: right;
 }
@@ -108,7 +113,7 @@ aside form button:hover {
 }
 
 .object {
-    width: 50%;
+    width: 150px;
     margin-bottom: 20px;
     margin-right: 10%;
    
@@ -119,7 +124,8 @@ aside form button:hover {
    
 }
 .object button {
-    margin-left: 5px;
+    margin-left: 0;
+    margin-top: 5px;
     transition: transform 500ms ease;
     cursor: pointer;
 }

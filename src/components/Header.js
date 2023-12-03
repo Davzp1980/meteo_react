@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -10,16 +11,12 @@ function Header() {
                 Meteo DATA
             <div className="login-link">
                 
-                <span className="Sign-In"><a  href="http://google.com" target="_blank" rel="noopener noreferrer">Sign-In</a></span>
-                <span className="Sign-Up"><a href="http://google.com" target="_blank" rel="noopener noreferrer">Sign-Up</a></span>
+                <span className="home"><Link to="/">Home</Link></span>
+                <span className="Sign-In"><Link  to="/sign-in">Sign-In/Sign-Up</Link></span>
+                
             </div>   
             </header>
-            
-            
-            
-            
-            
-                
+ 
         </div>
     )
 }

@@ -58,3 +58,9 @@ td {
     text-align: center;
     padding: 5px;
 }
+
+.table-data {
+    padding-top: 20px;
+    padding-left: 400px;
+    float: left;
+}

@@ -1,5 +1,6 @@
 import React, {  useState } from "react";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 
 
 
@@ -9,6 +10,7 @@ function Input() {
     
     const [data, setData] = useState([])
     const [get, setGet] = useState("")
+    const [err,setErr] = useState(false)
     
     
     function input(event) {
@@ -28,23 +30,28 @@ function Input() {
               setData(datas.data);
               console.log(datas)
               
+          }).catch((err) =>{
+            setErr(true)
           })
+    }
+
+    if (err) {
+      return <Navigate to='/sign-in'/>
     }
     
     return (
       
       <div className="table-data">
         <form className="object">
-          <label>Выберете объект:</label>
+          
           <select onChange={e => setGet(e.target.value)}>
             <option value="">Choose an object </option>
             <option value="lux" >lux</option>
             <option value="laboratory" >laboratory</option>
             <option value="kitchen" >kitchen</option>
           </select>
-          <label>Введине название объекта:</label>
-          <input placeholder="Input object" type="text" onChange={input}/>
-          <button  onClick={submit}>Sumbit</button>
+          
+          <button onClick={submit}>Sumbit</button>
         </form>
                     
                     <div>
