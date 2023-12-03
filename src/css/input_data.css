@@ -1,0 +1,15 @@
+.input_data input {
+    background: #222;
+    margin-bottom: 5px;
+    color: #fff;
+    
+ }
+ 
+ .input_data button {
+     margin-bottom: 5px;
+     margin-left: 5px;
+ }
+ 
+ .input_data button:hover{
+     transform: scale(1.1);
+ }

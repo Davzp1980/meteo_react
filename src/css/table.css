@@ -1,0 +1,60 @@
+.wrapper {
+    width: 52%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+input:first-child {
+    margin-top: 0px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: 5px;
+}
+
+button {
+    width: 70px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+th {
+    text-align: center;
+    min-width: 100px;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 5px;
+    background-color: rgb(101, 151, 134);
+}
+th:first-child {
+    min-width: 20px;
+}
+
+td {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
