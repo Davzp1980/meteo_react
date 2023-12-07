@@ -99,8 +99,19 @@ aside {
 .signIn-button {
     margin-right: 96px;
 }
-.login button:hover{
-    transform: scale(1.1);
+.login button:hover {
+    transform: scale(1.2);
+    background-color: #8c8797;
+    letter-spacing: 1.5px;
+    transition: 600ms ;
+
+    
+}
+
+.login button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 12px;
+    border: 2px solid rgb(128, 172, 169);
 }
 
 aside form input,

@@ -64,7 +64,9 @@ function Login() {
                 <div className="sign-buttons">
                     <p className="signIn-button"><button type="button" onClick={signIn}>Sign In</button></p>
                     <p><button type="button" onClick={signUP}>Sign Up</button></p>
+                    
                 </div>
+               
                 
             </div>
            
