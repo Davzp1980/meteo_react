@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Navigate, useNavigate } from "react-router-dom";
-import Input from "./InpitForm";
+import { Navigate } from "react-router-dom";
+
 
 
 
@@ -11,7 +11,7 @@ function Login() {
     const [inppassword, setPassword] = useState("")
     const [login, setRedirect] = useState(false)
     const [err, setErr]= useState(false);
-    const [signUp, setSignUp] = useState(false)
+    
     
     
     const signIn = async (e) => {
@@ -55,14 +55,20 @@ function Login() {
     
     return (
         
-        <div className="login">
+        <div >
+            <div className="login">
+                <input name="name" placeholder="name" value={inpname}
+                    onChange={(e) => setName(e.target.value)} />
+                <input name="password" placeholder="password" value={inppassword}
+                    onChange={(e) => setPassword(e.target.value)}/>
+                <div className="sign-buttons">
+                    <p className="signIn-button"><button type="button" onClick={signIn}>Sign In</button></p>
+                    <p><button type="button" onClick={signUP}>Sign Up</button></p>
+                </div>
+                
+            </div>
+           
             
-            <input name="name" placeholder="name" value={inpname}
-                onChange={(e) => setName(e.target.value)} />
-            <input name="password" placeholder="password" value={inppassword}
-                onChange={(e) => setPassword(e.target.value)}/>
-            <p><button type="button" onClick={signIn}>Sign In</button></p>
-            <p><button type="button" onClick={signUP}>Sign Up</button></p>
         </div>
     )
 }

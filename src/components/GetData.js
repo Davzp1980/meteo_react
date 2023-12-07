@@ -6,17 +6,12 @@ import { Navigate } from "react-router-dom";
 
 
 
-function Input() {
+function GetData() {
     
     const [data, setData] = useState([])
     const [get, setGet] = useState("")
     const [err,setErr] = useState(false)
-    
-    
-    function input(event) {
-      setGet(event.target.value)
-    }
-   
+     
     function submit(event) {
       event.preventDefault()
 
@@ -82,31 +77,9 @@ function Input() {
                         </div>
 
       </div>
-      /*
-      <div>
-        <form className="object">
-          <input placeholder="Input object" type="text" onChange={input}/>
-          <button  onClick={submit}>Sumbit</button>
-        </form>
-        
-        
-          {data.map(e => {
-            
-              return (
-                
-                <article className="data" key={e.id}>
-                    <h3>Обьект: {e.object}</h3>      
-                        Темперетура: {e.temperetura}<br></br>  
-                        Влажность: {e.humidity}<br></br>
-                        Давление: {e.pressure}<br></br>
-                        Дата:{e.date}
-                </article>      
-              )
-           })}
-      </div>
-      */
+
     )
            
 }
 
-export default Input;
+export default GetData;

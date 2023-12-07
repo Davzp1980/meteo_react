@@ -5,6 +5,7 @@ import * as ReactDOMClient from 'react-dom/client'
 import './css/main.css'
 import './css/table.css'
 import './css/input_data.css'
+import './css/media-queries.css'
 import { BrowserRouter } from 'react-router-dom';
 
 

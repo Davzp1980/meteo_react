@@ -64,8 +64,8 @@ function Table () {
 
 
     return(
-        <div className="wrapper">
-            <div className="wrapper-content">
+        <div>
+            <div>
                 <div className="table-data">
                     <table>
                     <th>#</th>
@@ -93,27 +93,6 @@ function Table () {
                     </table>
                 </div>
 
-                <div>
-                    <form onSubmit={handleSubmitUser} onReset={handleCleanClick}>
-                        <input placeholder="name" onChange={(e) => setUserData((prevState) => ({
-                            ...prevState,
-                            userName:e.target.value
-                        }))} value={userData.userName}/>
-                        <input placeholder="surname" onChange={(e) => setUserData((prevState) =>({
-                            ...prevState,
-                            userSurname: e.target.value
-                        }))} value={userData.userSurname}/>
-                        <input placeholder="salary" onChange={(e) => setUserData((prevState) => ({
-                            ...prevState,
-                            userSalary: e.target.value
-                        }))} value={userData.userSalary}/>
-
-                        <div className="buttons-wrapper">
-                            <button type="reset">Clean</button>
-                            <button disabled={!isFieldsEmpty} type="submit">{editableUserdata.isEdit ? 'Edit' : 'Add'}</button> 
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     )

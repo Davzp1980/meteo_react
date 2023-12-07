@@ -1,11 +1,11 @@
 import React from "react";
-import Input from "./components/InpitForm";
+import GetData from "./components/GetData";
 import Header from "./components/Header";
 import Login from "./components/Login";
-import Inputdata from "./components/InputData";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import Wrong_Login from "./components/Wrong_ligin";
+import WrongLogin from "./components/Wrong_login";
+import LogOut from "./components/LogOut";
 
 
 
@@ -15,19 +15,16 @@ function App() {
       <div>
           <Header/>
         
-          <main>
-           
-          </main>
         
-          <aside>
-            
-          </aside>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/wrong" element={<Wrong_Login/>}/>
+          <Route path="/wrong" element={<WrongLogin/>}/>
           <Route path="/sign-in" element={<Login/>}/>
-          <Route path="/object" element={<Input/>}/>
+          <Route path="/object" element={<GetData/>}/>
+          <Route path="/logout" element={<LogOut/>}/>
         </Routes>
+
+        <footer></footer>
       </div>
     );
   

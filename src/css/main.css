@@ -4,21 +4,21 @@
 }
 
 body {
-   
+    
     background-color:#333;
     color:#fff;
    
 }
 
 .header {
-    
-    background-color: rgb(137, 154, 160);
-    
-}
-.text-header {
     padding-top: 20px;
-    padding-left: 40px;
     padding-bottom: 20px;
+    background-color: rgb(137, 154, 160);
+}
+
+.text-header {
+    text-align: left;
+    padding-left: 20px;
     color: black;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -26,29 +26,47 @@ body {
 }
 
 .login-link {
-    color: black;
-    float: right;
+    margin-top: -28px;
+    text-align: end;
     margin-right: 40px;
+    color: black;
     font-size: 17px;
 }
 
-.Sign-In {
-    margin-right: 15px;
+.sign-In {
+    padding-right: 20px;
 }
 
-.Sign-Up {
-    margin-right: 40px;
-}
+
 
 .home {
-    
-    margin-right: 40px;
+    padding-right: 20px;
 }
-main {
-    margin: 50px 50px;
-    width: 15%;
-    float: left;
+
+.home-header {
+    color: #3e8fa0;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    text-align: center;
 }
+
+.logout-header {
+    color: #5aa03e;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wrong-login {
+    color: red;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
 
 aside {
     width: 20%;
@@ -58,24 +76,29 @@ aside {
 }
 
 .login {
-    width: 15%;
-    margin-top: 0;
-    margin-right: 0%;
-    float: right;
-}
-
-.login input {
-   background: #222;
-   margin-bottom: 5px;
-   color: #fff;
+    margin-left: 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
    
 }
 
-.login button {
+.login input {
+    font-size: 20px;
+    background: #222;
     margin-bottom: 5px;
-    margin-left: 5px;
+    color: #fff;
 }
 
+.sign-buttons {
+    display: flex;
+    
+}
+
+.signIn-button {
+    margin-right: 96px;
+}
 .login button:hover{
     transform: scale(1.1);
 }
