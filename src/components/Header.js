@@ -2,24 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
+
+
 function Header() {
     
     return (
         
-        <div className="header">
+        <header className="header">
             <div className="text-header">
                 Meteo DATA
             </div> 
-            <div className="login-link">
+            <nav className="login-link">
                 
-                <span className="home"><Link to="/">Home</Link></span>
-                <span className="sign-In"><Link  to="/sign-in">Sign-In</Link></span>
-                <span className="logout"><Link  to="/logout">Logout</Link></span>
+                <span className="home"><Link to="/"><img src={require('./img/home.png')} alt="Home" width="30"></img></Link></span>
+                <span className="sign-In"><Link  to="/sign-in"><img src={require("./img/sign-in.png")} alt="Sign-In" width="30"></img></Link></span>
+                <span className="logout"><Link  to="/logout"><img src={require("./img/logout.png")} alt="Logout" width="30"></img></Link></span>
                 
               
-            </div>
+            </nav>
  
-        </div>
+        </header>
     )
 }
 

@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     background-color: rgb(137, 154, 160);
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .login-link {
-    margin-top: -28px;
+    margin-top: -35px;
     text-align: end;
     margin-right: 40px;
     color: black;

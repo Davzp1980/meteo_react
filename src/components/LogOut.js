@@ -15,8 +15,7 @@ function LogOut() {
     })    
     return (
         
-        <div>
-            
+        <div>            
             <h1 className="logout-header">You are logged out</h1>
         </div>
     )
