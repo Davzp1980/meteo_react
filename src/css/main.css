@@ -16,6 +16,22 @@ body {
     background-color: rgb(137, 154, 160);
 }
 
+footer {
+    float: inline-end;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(137, 154, 160);
+    position: absolute;
+    bottom: 0;
+    border-color: #5aa03e;
+    border-width: 2px;
+}
+.footer-header{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #222;
+}
+
 .text-header {
     text-align: left;
     padding-left: 20px;

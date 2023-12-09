@@ -13,18 +13,22 @@ function App() {
     
     return (
       <div>
-          <Header/>
+        <header>
+            <Header/>
+        </header>
         
-        
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/wrong" element={<WrongLogin/>}/>
-          <Route path="/sign-in" element={<Login/>}/>
-          <Route path="/object" element={<GetData/>}/>
-          <Route path="/logout" element={<LogOut/>}/>
-        </Routes>
-
-        <footer></footer>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/wrong" element={<WrongLogin/>}/>
+            <Route path="/sign-in" element={<Login/>}/>
+            <Route path="/object" element={<GetData/>}/>
+            <Route path="/logout" element={<LogOut/>}/>
+          </Routes>
+        </main>
+        <footer>
+          <h2 className="footer-header">Website developed in Golang and React</h2>
+        </footer>
       </div>
     );
   
