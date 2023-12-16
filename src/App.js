@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import WrongLogin from "./components/Wrong_login";
 import LogOut from "./components/LogOut";
+import Footer from "./components/Footer";
 
 
 
@@ -27,7 +28,8 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <h2 className="footer-header">Website developed in Golang and React</h2>
+          <Footer />
+        
         </footer>
       </div>
     );

@@ -50,27 +50,18 @@ function Login() {
                 setName('')
                 setPassword('')
             }))
-        
     }
     
     return (
-        
-        <div >
-            <div className="login">
-                <input name="name" placeholder="name" value={inpname}
+        <div className="login">
+            <input name="name" placeholder="name" value={inpname}
                     onChange={(e) => setName(e.target.value)} />
-                <input name="password" placeholder="password" value={inppassword}
+            <input name="password" placeholder="password" value={inppassword}
                     onChange={(e) => setPassword(e.target.value)}/>
-                <div className="sign-buttons">
-                    <p className="signIn-button"><button type="button" onClick={signIn}>Sign In</button></p>
-                    <p><button type="button" onClick={signUP}>Sign Up</button></p>
-                    
-                </div>
-               
-                
+            <div className="sign-buttons">
+                <p className="signIn-button"><button type="button" onClick={signIn}>Sign In</button></p>
+                <p><button type="button" onClick={signUP}>Sign Up</button></p>
             </div>
-           
-            
         </div>
     )
 }

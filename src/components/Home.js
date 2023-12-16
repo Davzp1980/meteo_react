@@ -6,8 +6,8 @@ function Home() {
     
     return (
         
-        <div >
-           <h1 className="home-header">Please login</h1>
+        <div className="home" >
+           <h1 >Please login</h1>
         </div>
     )
 }
