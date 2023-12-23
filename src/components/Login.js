@@ -14,6 +14,7 @@ function Login() {
     
     
     
+    
     const signIn = async (e) => {
         e.preventDefault()
         
@@ -54,13 +55,13 @@ function Login() {
     
     return (
         <div className="login">
-            <input name="name" placeholder="name" value={inpname}
+            <input class="name" placeholder="name" value={inpname}
                     onChange={(e) => setName(e.target.value)} />
             <input name="password" placeholder="password" value={inppassword}
                     onChange={(e) => setPassword(e.target.value)}/>
             <div className="sign-buttons">
-                <p className="signIn-button"><button type="button" onClick={signIn}>Sign In</button></p>
-                <p><button type="button" onClick={signUP}>Sign Up</button></p>
+                <p className="signIn-button"><button disabled={inpname.length<1 | inppassword.length<1} type="button" onClick={signIn}>Sign In</button></p>
+                <p><button disabled={inpname.length<1 | inppassword.length<1} type="button" onClick={signUP}>Sign Up</button></p>
             </div>
         </div>
     )
